@@ -14,25 +14,28 @@ The model interprets the request and executes the appropriate Kali tool.
 
 # Architecture
 
-+----------------------+
-|  Visual Studio Code  |
-|     (Client UI)      |
-+----------+-----------+
-           |
-           | Prompt / Code / Queries
-           v
-+----------------------+
-|    LLM (Haiku)       |
-|  AI Assistance Layer |
-+----------+-----------+
-           |
-           | Security tasks / payload generation
-           v
-+----------------------+
-|     Kali Linux       |
-|   Attack Machine     |
-|  Pentesting Tools    |
-+----------------------+
+```mermaid
+flowchart LR
+
+    %% Client
+    subgraph Client Environment
+        VSCode["💻 Visual Studio Code<br/>Client UI"]
+    end
+
+    %% LLM
+    subgraph AI Layer
+        Haiku["🤖 Haiku Model<br/>LLM Processing"]
+    end
+
+    %% Attack Environment
+    subgraph Security Lab
+        Kali["🐉 Kali Linux<br/>Attack Machine"]
+    end
+
+    VSCode -->|Prompts / Requests| Haiku
+    Haiku -->|Generated Payloads / Scripts| Kali
+    Kali -->|Results / Output| VSCode
+```
 
 The system consists of three main components:
 
