@@ -7,10 +7,7 @@
           "/home/francescog/.ssh/id_ed25519",
           "root@172.17.0.3",
           "mcp-server"
-        ],
-        "description": "MCP Kali Server",
-        "timeout": 3000,
-        "alwaysAllow": []
+        ]
     }
   }
 }
