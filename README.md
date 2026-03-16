@@ -14,9 +14,25 @@ The model interprets the request and executes the appropriate Kali tool.
 
 # Architecture
 
-```mermaid
-flowchart LR
-    VSCode["Visual Studio Code"] --> LLM["Haiku LLM"] --> Kali["Kali Linux"]
+```text
+        +----------------------+
+        |  Visual Studio Code  |
+        |      (Client UI)     |
+        +----------+-----------+
+                   |
+                   |  Prompts / Queries
+                   v
+        +----------------------+
+        |      Haiku LLM       |
+        |     AI Processing    |
+        +----------+-----------+
+                   |
+                   |  Payloads / Scripts
+                   v
+        +----------------------+
+        |      Kali Linux      |
+        |    Attack Machine    |
+        +----------------------+
 ```
 
 TheeThe system consists of three main components:
