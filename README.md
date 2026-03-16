@@ -35,7 +35,7 @@ The model interprets the request and executes the appropriate Kali tool.
         +----------------------+
 ```
 
-TheeThe system consists of three main components:
+The system consists of three main components:
 
 | Component             | Description           | Role                                                                     |
 | --------------------- | --------------------- | ------------------------------------------------------------------------ |
