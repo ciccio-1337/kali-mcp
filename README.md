@@ -16,28 +16,10 @@ The model interprets the request and executes the appropriate Kali tool.
 
 ```mermaid
 flowchart LR
-
-    %% Client
-    subgraph Client Environment
-        VSCode["💻 Visual Studio Code<br/>Client UI"]
-    end
-
-    %% LLM
-    subgraph AI Layer
-        Haiku["🤖 Haiku Model<br/>LLM Processing"]
-    end
-
-    %% Attack Environment
-    subgraph Security Lab
-        Kali["🐉 Kali Linux<br/>Attack Machine"]
-    end
-
-    VSCode -->|Prompts / Requests| Haiku
-    Haiku -->|Generated Payloads / Scripts| Kali
-    Kali -->|Results / Output| VSCode
+    VSCode["Visual Studio Code"] --> LLM["Haiku LLM"] --> Kali["Kali Linux"]
 ```
 
-The system consists of three main components:
+TheeThe system consists of three main components:
 
 | Component             | Description           | Role                                                                     |
 | --------------------- | --------------------- | ------------------------------------------------------------------------ |
