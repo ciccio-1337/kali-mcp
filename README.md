@@ -49,12 +49,12 @@ Context Protocol (MCP)**.
 
 # Workflow
 
-1.  The user sends a prompt to the model
-2.  The model interprets the request
-3.  The model selects the appropriate tool
+1.  The user sends a prompt to the LLM (Haiku) via Visual Studio Code
+2.  The LLM (Haiku) interprets the request
+3.  The LLM (Haiku) selects the appropriate tool
 4.  MCP server executes the command on Kali
-5.  Results are returned to the model
-6.  The model analyzes and explains the output
+5.  Results are returned to the LLM (Haiku)
+6.  The LLM (Haiku) analyzes and explains the output
 
 Example:
 
