@@ -3,8 +3,6 @@
     "mcp-kali": {
       "command": "ssh",
         "args": [
-          "-i",
-          "/home/francescog/.ssh/id_ed25519",
           "root@172.17.0.3",
           "mcp-server"
         ]
