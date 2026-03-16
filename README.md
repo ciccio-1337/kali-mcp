@@ -16,11 +16,11 @@ The model interprets the request and executes the appropriate Kali tool.
 
 The system consists of three main components:
 
-  Component        Description
-  ---------------- ------------------------
-  Client UI        Visual Studio Code
-  Attack Machine   Kali Linux
-  LLM              Anthropic Haiku model
+| Component             | Description           | Role                                                                     |
+| --------------------- | --------------------- | ------------------------------------------------------------------------ |
+| 💻 **Client UI**      | Visual Studio Code    | Development interface used to interact with the LLM and run tests        |
+| 🐉 **Attack Machine** | Kali Linux            | Offensive security environment used for penetration testing              |
+| 🤖 **LLM**            | Anthropic Haiku Model | AI model used to assist with analysis, payload generation and automation |
 
 Communication between the model and Kali tools happens through **Model
 Context Protocol (MCP)**.
