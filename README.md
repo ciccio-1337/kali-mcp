@@ -14,6 +14,26 @@ The model interprets the request and executes the appropriate Kali tool.
 
 # Architecture
 
++----------------------+
+|  Visual Studio Code  |
+|     (Client UI)      |
++----------+-----------+
+           |
+           | Prompt / Code / Queries
+           v
++----------------------+
+|    LLM (Haiku)       |
+|  AI Assistance Layer |
++----------+-----------+
+           |
+           | Security tasks / payload generation
+           v
++----------------------+
+|     Kali Linux       |
+|   Attack Machine     |
+|  Pentesting Tools    |
++----------------------+
+
 The system consists of three main components:
 
 | Component             | Description           | Role                                                                     |
